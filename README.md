@@ -26,6 +26,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Big thanks to [twostraws](https://github.com/twostraws) whose tutorials in YouTube about the use of SwiftUI played an important role on making this possible.
+- Big thanks to [@twostraws](https://github.com/twostraws) whose tutorials in YouTube about the use of SwiftUI played an important role on making this possible.
 - Thanks to [@rebeloper](https://github.com/rebeloper) whose videos about styling helped me give a nice UI to my project.
-- And finally to (@StewartLynch)[https://github.com/StewartLynch] whose videos helped me in the darkest times of the development of this app.
+- And finally to [@StewartLynch](https://github.com/StewartLynch) whose videos helped me in the darkest times of the development of this app.
