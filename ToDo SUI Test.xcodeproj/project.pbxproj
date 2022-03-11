@@ -8,22 +8,112 @@
 
 /* Begin PBXBuildFile section */
 		1430AFD226791B9700FD6CB0 /* ToDo_SUI_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFD126791B9700FD6CB0 /* ToDo_SUI_TestApp.swift */; };
-		1430AFD426791B9700FD6CB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFD326791B9700FD6CB0 /* ContentView.swift */; };
+		1430AFD426791B9700FD6CB0 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFD326791B9700FD6CB0 /* ToDoListView.swift */; };
 		1430AFD626791B9800FD6CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1430AFD526791B9800FD6CB0 /* Assets.xcassets */; };
 		1430AFD926791B9800FD6CB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1430AFD826791B9800FD6CB0 /* Preview Assets.xcassets */; };
+		1430AFE126791BD900FD6CB0 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFE026791BD900FD6CB0 /* ToDo.swift */; };
+		1430AFE326791C8C00FD6CB0 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFE226791C8C00FD6CB0 /* DataStore.swift */; };
+		1430AFE52679222900FD6CB0 /* ToDoFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFE42679222900FD6CB0 /* ToDoFormViewModel.swift */; };
+		1430AFE7267923BF00FD6CB0 /* ToDoEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFE6267923BF00FD6CB0 /* ToDoEditView.swift */; };
+		1430AFEF2679427F00FD6CB0 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFEE2679427F00FD6CB0 /* FileManager+Extension.swift */; };
+		1430AFF126795FC700FD6CB0 /* ToDoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFF026795FC700FD6CB0 /* ToDoError.swift */; };
+		146887B426AB9C4100289B9F /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146887B326AB9C4100289B9F /* ToDoCell.swift */; };
+		1496077D26B9E4E100197CA5 /* ToDoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1496077C26B9E4E100197CA5 /* ToDoDetailView.swift */; };
+		14A85D8B26BB58CF0070C1F5 /* ToDo_SUI_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFD126791B9700FD6CB0 /* ToDo_SUI_TestApp.swift */; };
+		14ADF0D826BB317A005B3A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14ADF0D726BB317A005B3A23 /* Assets.xcassets */; };
+		14ADF0DF26BB317A005B3A23 /* Watch ToDo Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 14ADF0DE26BB317A005B3A23 /* Watch ToDo Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		14ADF0E426BB317A005B3A23 /* ToDoWatchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADF0E326BB317A005B3A23 /* ToDoWatchListView.swift */; };
+		14ADF0E826BB317A005B3A23 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADF0E726BB317A005B3A23 /* ComplicationController.swift */; };
+		14ADF0EA26BB317A005B3A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14ADF0E926BB317A005B3A23 /* Assets.xcassets */; };
+		14ADF0ED26BB317A005B3A23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14ADF0EC26BB317A005B3A23 /* Preview Assets.xcassets */; };
+		14ADF0F126BB317A005B3A23 /* Watch ToDo.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 14ADF0D526BB3179005B3A23 /* Watch ToDo.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		14ADF10D26BB3379005B3A23 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFEE2679427F00FD6CB0 /* FileManager+Extension.swift */; };
+		14ADF10F26BB3390005B3A23 /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146887B326AB9C4100289B9F /* ToDoCell.swift */; };
+		14ADF11026BB33AC005B3A23 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFE026791BD900FD6CB0 /* ToDo.swift */; };
+		14ADF11126BB33B3005B3A23 /* ToDoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFF026795FC700FD6CB0 /* ToDoError.swift */; };
+		14ADF11226BB33B6005B3A23 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFE226791C8C00FD6CB0 /* DataStore.swift */; };
+		14ADF11326BB33B9005B3A23 /* ToDoFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1430AFE42679222900FD6CB0 /* ToDoFormViewModel.swift */; };
+		14ADF11B26BB395E005B3A23 /* ToDoEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14ADF11A26BB395E005B3A23 /* ToDoEditView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14ADF0E026BB317A005B3A23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1430AFC626791B9700FD6CB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14ADF0DD26BB317A005B3A23;
+			remoteInfo = "Watch ToDo Extension";
+		};
+		14ADF0EF26BB317A005B3A23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1430AFC626791B9700FD6CB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14ADF0D426BB3179005B3A23;
+			remoteInfo = "Watch ToDo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14ADF0F226BB317A005B3A23 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				14ADF0F126BB317A005B3A23 /* Watch ToDo.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14ADF0F526BB317A005B3A23 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				14ADF0DF26BB317A005B3A23 /* Watch ToDo Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1430AFCE26791B9700FD6CB0 /* ToDo SUI Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDo SUI Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1430AFD126791B9700FD6CB0 /* ToDo_SUI_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo_SUI_TestApp.swift; sourceTree = "<group>"; };
-		1430AFD326791B9700FD6CB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1430AFD326791B9700FD6CB0 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
 		1430AFD526791B9800FD6CB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1430AFD826791B9800FD6CB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1430AFDA26791B9800FD6CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1430AFE026791BD900FD6CB0 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		1430AFE226791C8C00FD6CB0 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		1430AFE42679222900FD6CB0 /* ToDoFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoFormViewModel.swift; sourceTree = "<group>"; };
+		1430AFE6267923BF00FD6CB0 /* ToDoEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoEditView.swift; sourceTree = "<group>"; };
+		1430AFEE2679427F00FD6CB0 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		1430AFF026795FC700FD6CB0 /* ToDoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoError.swift; sourceTree = "<group>"; };
+		146887B326AB9C4100289B9F /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		1496077C26B9E4E100197CA5 /* ToDoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailView.swift; sourceTree = "<group>"; };
+		14ADF0D526BB3179005B3A23 /* Watch ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch ToDo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14ADF0D726BB317A005B3A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14ADF0D926BB317A005B3A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14ADF0DE26BB317A005B3A23 /* Watch ToDo Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch ToDo Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14ADF0E326BB317A005B3A23 /* ToDoWatchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoWatchListView.swift; sourceTree = "<group>"; };
+		14ADF0E726BB317A005B3A23 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		14ADF0E926BB317A005B3A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14ADF0EC26BB317A005B3A23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14ADF0EE26BB317A005B3A23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14ADF11A26BB395E005B3A23 /* ToDoEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1430AFCB26791B9700FD6CB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14ADF0DB26BB317A005B3A23 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				1430AFD026791B9700FD6CB0 /* ToDo SUI Test */,
+				14ADF0D626BB3179005B3A23 /* Watch ToDo */,
+				14ADF0E226BB317A005B3A23 /* Watch ToDo Extension */,
 				1430AFCF26791B9700FD6CB0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				1430AFCE26791B9700FD6CB0 /* ToDo SUI Test.app */,
+				14ADF0D526BB3179005B3A23 /* Watch ToDo.app */,
+				14ADF0DE26BB317A005B3A23 /* Watch ToDo Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,7 +147,10 @@
 			isa = PBXGroup;
 			children = (
 				1430AFD126791B9700FD6CB0 /* ToDo_SUI_TestApp.swift */,
-				1430AFD326791B9700FD6CB0 /* ContentView.swift */,
+				1430AFED2679426100FD6CB0 /* Extensions */,
+				1430AFEA267936D000FD6CB0 /* Views */,
+				1430AFEB267936E700FD6CB0 /* Models */,
+				1430AFEC267936FF00FD6CB0 /* ViewModels */,
 				1430AFD526791B9800FD6CB0 /* Assets.xcassets */,
 				1430AFDA26791B9800FD6CB0 /* Info.plist */,
 				1430AFD726791B9800FD6CB0 /* Preview Content */,
@@ -69,6 +166,89 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1430AFEA267936D000FD6CB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1496077B26B9E48F00197CA5 /* List */,
+				1496077E26B9E4F300197CA5 /* Detail */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1430AFEB267936E700FD6CB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1430AFE026791BD900FD6CB0 /* ToDo.swift */,
+				1430AFF026795FC700FD6CB0 /* ToDoError.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1430AFEC267936FF00FD6CB0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1430AFE226791C8C00FD6CB0 /* DataStore.swift */,
+				1430AFE42679222900FD6CB0 /* ToDoFormViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1430AFED2679426100FD6CB0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1430AFEE2679427F00FD6CB0 /* FileManager+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1496077B26B9E48F00197CA5 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				1430AFD326791B9700FD6CB0 /* ToDoListView.swift */,
+				146887B326AB9C4100289B9F /* ToDoCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		1496077E26B9E4F300197CA5 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1496077C26B9E4E100197CA5 /* ToDoDetailView.swift */,
+				1430AFE6267923BF00FD6CB0 /* ToDoEditView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		14ADF0D626BB3179005B3A23 /* Watch ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				14ADF0D726BB317A005B3A23 /* Assets.xcassets */,
+				14ADF0D926BB317A005B3A23 /* Info.plist */,
+			);
+			path = "Watch ToDo";
+			sourceTree = "<group>";
+		};
+		14ADF0E226BB317A005B3A23 /* Watch ToDo Extension */ = {
+			isa = PBXGroup;
+			children = (
+				14ADF0E326BB317A005B3A23 /* ToDoWatchListView.swift */,
+				14ADF11A26BB395E005B3A23 /* ToDoEditView.swift */,
+				14ADF0E726BB317A005B3A23 /* ComplicationController.swift */,
+				14ADF0E926BB317A005B3A23 /* Assets.xcassets */,
+				14ADF0EE26BB317A005B3A23 /* Info.plist */,
+				14ADF0EB26BB317A005B3A23 /* Preview Content */,
+			);
+			path = "Watch ToDo Extension";
+			sourceTree = "<group>";
+		};
+		14ADF0EB26BB317A005B3A23 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				14ADF0EC26BB317A005B3A23 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +259,51 @@
 				1430AFCA26791B9700FD6CB0 /* Sources */,
 				1430AFCB26791B9700FD6CB0 /* Frameworks */,
 				1430AFCC26791B9700FD6CB0 /* Resources */,
+				14ADF0F226BB317A005B3A23 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				14ADF0F026BB317A005B3A23 /* PBXTargetDependency */,
 			);
 			name = "ToDo SUI Test";
 			productName = "ToDo SUI Test";
 			productReference = 1430AFCE26791B9700FD6CB0 /* ToDo SUI Test.app */;
 			productType = "com.apple.product-type.application";
+		};
+		14ADF0D426BB3179005B3A23 /* Watch ToDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14ADF0F926BB317A005B3A23 /* Build configuration list for PBXNativeTarget "Watch ToDo" */;
+			buildPhases = (
+				14ADF0D326BB3179005B3A23 /* Resources */,
+				14ADF0F526BB317A005B3A23 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14ADF0E126BB317A005B3A23 /* PBXTargetDependency */,
+			);
+			name = "Watch ToDo";
+			productName = "Watch ToDo";
+			productReference = 14ADF0D526BB3179005B3A23 /* Watch ToDo.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		14ADF0DD26BB317A005B3A23 /* Watch ToDo Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14ADF0F826BB317A005B3A23 /* Build configuration list for PBXNativeTarget "Watch ToDo Extension" */;
+			buildPhases = (
+				14ADF0DA26BB317A005B3A23 /* Sources */,
+				14ADF0DB26BB317A005B3A23 /* Frameworks */,
+				14ADF0DC26BB317A005B3A23 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch ToDo Extension";
+			productName = "Watch ToDo Extension";
+			productReference = 14ADF0DE26BB317A005B3A23 /* Watch ToDo Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -100,6 +316,12 @@
 				TargetAttributes = {
 					1430AFCD26791B9700FD6CB0 = {
 						CreatedOnToolsVersion = 12.5;
+					};
+					14ADF0D426BB3179005B3A23 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					14ADF0DD26BB317A005B3A23 = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
@@ -117,6 +339,8 @@
 			projectRoot = "";
 			targets = (
 				1430AFCD26791B9700FD6CB0 /* ToDo SUI Test */,
+				14ADF0D426BB3179005B3A23 /* Watch ToDo */,
+				14ADF0DD26BB317A005B3A23 /* Watch ToDo Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +355,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14ADF0D326BB3179005B3A23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14ADF0D826BB317A005B3A23 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14ADF0DC26BB317A005B3A23 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14ADF0ED26BB317A005B3A23 /* Preview Assets.xcassets in Resources */,
+				14ADF0EA26BB317A005B3A23 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,12 +379,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1430AFD426791B9700FD6CB0 /* ContentView.swift in Sources */,
+				1430AFE126791BD900FD6CB0 /* ToDo.swift in Sources */,
+				1430AFEF2679427F00FD6CB0 /* FileManager+Extension.swift in Sources */,
+				1430AFE7267923BF00FD6CB0 /* ToDoEditView.swift in Sources */,
+				1430AFE326791C8C00FD6CB0 /* DataStore.swift in Sources */,
+				1430AFD426791B9700FD6CB0 /* ToDoListView.swift in Sources */,
+				1496077D26B9E4E100197CA5 /* ToDoDetailView.swift in Sources */,
+				1430AFF126795FC700FD6CB0 /* ToDoError.swift in Sources */,
 				1430AFD226791B9700FD6CB0 /* ToDo_SUI_TestApp.swift in Sources */,
+				1430AFE52679222900FD6CB0 /* ToDoFormViewModel.swift in Sources */,
+				146887B426AB9C4100289B9F /* ToDoCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14ADF0DA26BB317A005B3A23 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14ADF11B26BB395E005B3A23 /* ToDoEditView.swift in Sources */,
+				14ADF0E426BB317A005B3A23 /* ToDoWatchListView.swift in Sources */,
+				14ADF11226BB33B6005B3A23 /* DataStore.swift in Sources */,
+				14ADF10D26BB3379005B3A23 /* FileManager+Extension.swift in Sources */,
+				14ADF11026BB33AC005B3A23 /* ToDo.swift in Sources */,
+				14ADF11126BB33B3005B3A23 /* ToDoError.swift in Sources */,
+				14ADF0E826BB317A005B3A23 /* ComplicationController.swift in Sources */,
+				14ADF10F26BB3390005B3A23 /* ToDoCell.swift in Sources */,
+				14ADF11326BB33B9005B3A23 /* ToDoFormViewModel.swift in Sources */,
+				14A85D8B26BB58CF0070C1F5 /* ToDo_SUI_TestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14ADF0E126BB317A005B3A23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14ADF0DD26BB317A005B3A23 /* Watch ToDo Extension */;
+			targetProxy = 14ADF0E026BB317A005B3A23 /* PBXContainerItemProxy */;
+		};
+		14ADF0F026BB317A005B3A23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14ADF0D426BB3179005B3A23 /* Watch ToDo */;
+			targetProxy = 14ADF0EF26BB317A005B3A23 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1430AFDB26791B9800FD6CB0 /* Debug */ = {
@@ -269,7 +548,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDo SUI Test/Preview Content\"";
-				DEVELOPMENT_TEAM = BXSDXC45DP;
+				DEVELOPMENT_TEAM = 7AGVRFU5DF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ToDo SUI Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -277,7 +556,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Augusto.ToDo-SUI-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "Augusto.ToDo-SUI-Test1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,9 +568,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDo SUI Test/Preview Content\"";
-				DEVELOPMENT_TEAM = BXSDXC45DP;
+				DEVELOPMENT_TEAM = 7AGVRFU5DF;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "ToDo SUI Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -299,10 +579,99 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Augusto.ToDo-SUI-Test";
+				PRODUCT_BUNDLE_IDENTIFIER = "Augusto.ToDo-SUI-Test1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14ADF0F326BB317A005B3A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AGVRFU5DF;
+				IBSC_MODULE = Watch_ToDo_Extension;
+				INFOPLIST_FILE = "Watch ToDo/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Augusto.ToDo-SUI-Test1.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		14ADF0F426BB317A005B3A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AGVRFU5DF;
+				IBSC_MODULE = Watch_ToDo_Extension;
+				INFOPLIST_FILE = "Watch ToDo/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Augusto.ToDo-SUI-Test1.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		14ADF0F626BB317A005B3A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Watch ToDo Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7AGVRFU5DF;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Watch ToDo Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Augusto.ToDo-SUI-Test1.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		14ADF0F726BB317A005B3A23 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Watch ToDo Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 7AGVRFU5DF;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Watch ToDo Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Augusto.ToDo-SUI-Test1.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
 			};
 			name = Release;
 		};
@@ -323,6 +692,24 @@
 			buildConfigurations = (
 				1430AFDE26791B9800FD6CB0 /* Debug */,
 				1430AFDF26791B9800FD6CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14ADF0F826BB317A005B3A23 /* Build configuration list for PBXNativeTarget "Watch ToDo Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14ADF0F626BB317A005B3A23 /* Debug */,
+				14ADF0F726BB317A005B3A23 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14ADF0F926BB317A005B3A23 /* Build configuration list for PBXNativeTarget "Watch ToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14ADF0F326BB317A005B3A23 /* Debug */,
+				14ADF0F426BB317A005B3A23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

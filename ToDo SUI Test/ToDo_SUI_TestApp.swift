@@ -11,7 +11,13 @@ import SwiftUI
 struct ToDo_SUI_TestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            #if os(watchOS)
+            ToDoWatchListView()
+                .environmentObject(DataStore())
+            #else
+            ToDoListView()
+                .environmentObject(DataStore())
+            #endif
         }
     }
 }
